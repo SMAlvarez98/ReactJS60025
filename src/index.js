@@ -1,17 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const el = document.getElementById("root");
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(el);
+
+/* function App(){
+    let msj = "Mensaje random";
+    if (Math.random() > 0.5){
+        msj = "Se modijico el msj";
+    }
+    return <h1>El resultado es: {msj}</h1>//JSX
+} */
+
+/* function App(){ //SUPER ERROR
+    let msj = {nombre:"Pepe",apellido:"Lopez"}
+
+    return <h1>{msj}</h1>//JSX
+} */
+
+
+/* function App(){
+    const nombre = "Pepe"
+    const apellido = "Rojas"
+    return <h1>Bienvenido: {nombre} {apellido}</h1>
+} */
+
+/* function App(){
+    const mensaje = "Ingrese su nombre"
+    return <input type="number" min={5} max={10} style={{color:"red",fontSize:"20px"}}alt={mensaje}/>
+} */
+
+
+
+
+
+
+root .render(<App/>)
